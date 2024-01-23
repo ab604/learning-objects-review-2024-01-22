@@ -320,6 +320,8 @@
       margin-right: 0; 
     }
   </style>
+  <script src="index_files/libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="index_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-dark">
   <div class="reveal">
@@ -327,7 +329,7 @@
 
 <section id="title-slide" data-background-color="#8D3970" data-background-image="img/USH0149_LOGO-2021_RGB_White_Punched-AW.png" data-background-position="top right" data-background-size="25%" class="quarto-title-block center">
   <h1 class="title">Learning Objects</h1>
-  <p class="subtitle">Data and Analytics</p>
+  <p class="subtitle">Data, analytics &amp; feedback</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -349,7 +351,7 @@ Alistair Bailey
 <li>Database<span class="highlight">*</span> a collection of structured<span class="highlight2">*</span> information</li>
 <li>Therefore a database can also be a repository, but a repository isn’t necessarily a database.</li>
 </ol>
-<p><span class="small"><span class="highlight">*</span>These are not a universally agreed definitions.</span><br> <span class="small"><span class="highlight2">*</span>Structured means that data is organised in a way that machines can read it. Such as using common identifiers across items. Unstructured means there is no formalised way to relate objects to one another even if they are related.</span></p>
+<p><span class="highlight">*</span>These are not a universally agreed definitions.<br> <span class="highlight2">*</span>Structured means that data is organised in a way that machines can read it. Such as using common identifiers across items. Unstructured means there is no formalised way to relate objects to one another even if they are related.</p>
 </section>
 <section id="what-is-the-simplest-way-to-create-a-database" class="slide level2 center">
 <h2>What is the simplest way to create a database?</h2>
@@ -365,6 +367,152 @@ Alistair Bailey
 </section>
 <section id="slide6-id" class="slide level2" data-menu-title="BBC News COVID testing Excel fail" data-background-image="img/bbc-screenshot-2024-01-22.png" data-background-size="contain" data-fig-alt="Headline from BBC News: ">
 <h2></h2>
+</section>
+<section id="tidy-data" class="slide level2 center">
+<h2>Tidy data</h2>
+<ul>
+<li>Each column is a variable e.g.&nbsp;<code>object_name</code>, <code>date_created</code></li>
+<li>Each row represents a set of observed variables</li>
+<li>Each value has it’s own cell</li>
+</ul>
+</section>
+<section id="slide8-id" class="slide level2 center" data-menu-title="An example of a tidy table">
+<h2></h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped" data-quarto-postprocess="true" style="font-size: 32px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">object_name</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">date_created</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">type_of_object</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">analytics_available</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tidying data</td>
+<td style="text-align: left;">2023-04-01</td>
+<td style="text-align: left;">Panopto</td>
+<td style="text-align: left;">Panopto</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Publishing Research</td>
+<td style="text-align: left;">2023-10-01</td>
+<td style="text-align: left;">WordPress</td>
+<td style="text-align: left;">Google</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ERE Staff Library Guide</td>
+<td style="text-align: left;">2023-10-01</td>
+<td style="text-align: left;">ThingLink</td>
+<td style="text-align: left;">ThingLink</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<p>Here there are <code>four column variables</code> in <code>three rows</code>. Each <code>cell</code> has a <code>single value</code>.</p>
+</section>
+<section id="create-a-codebook" class="slide level2 center">
+<h2>Create a <span class="vonrestoff">codebook</span></h2>
+<p>The codebook describes what each variable is and what values they can take<span class="highlight">*</span></p>
+<p><span class="highlight">*</span>This can also be a csv or other plain text file.</p>
+</section>
+<section id="slide10-id" class="slide level2 center" data-menu-title="Tidy table revisited">
+<h2></h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped" data-quarto-postprocess="true" style="font-size: 32px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">object_name</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">date_created</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">type_of_object</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">analytics_available</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tidying data</td>
+<td style="text-align: left;">2023-04-01</td>
+<td style="text-align: left;">Panopto</td>
+<td style="text-align: left;">Panopto</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Publishing Research</td>
+<td style="text-align: left;">2023-10-01</td>
+<td style="text-align: left;">WordPress</td>
+<td style="text-align: left;">Google</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ERE Staff Library Guide</td>
+<td style="text-align: left;">2023-10-01</td>
+<td style="text-align: left;">ThingLink</td>
+<td style="text-align: left;">ThingLink</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<p>For example, here I could define that dates are entered in ISO format and restrict <code>analytics_available</code> to having only one of three values.</p>
+</section>
+<section id="analytics-user-behaviour" class="slide level2 center">
+<h2>Analytics &amp; user behaviour</h2>
+<ul>
+<li>LibGuides, Wordpress &amp; Articulate are connected to <span class="vonrestoff">Google Analytics</span><br>
+</li>
+<li>Panopto and ThingLink create their own statistics</li>
+</ul>
+</section>
+<section id="google-analytics" class="slide level2 center">
+<h2>Google Analytics<span class="highlight">*</span></h2>
+<ul>
+<li><span class="vonrestoff">Per page:</span> number of views, users, unique users and average engagement time over period defined</li>
+<li><span class="vonrestoff">Summary of user demographics:</span> country, city and language. Number of users and average engagement time</li>
+<li><span class="vonrestoff">Technology:</span> browser name, desktop, mobile or tablet</li>
+</ul>
+<p><span class="highlight">*</span> Analytics exports as csv</p>
+</section>
+<section id="in-built-analytics" class="slide level2 center">
+<h2>In-built analytics</h2>
+<ul>
+<li><span class="vonrestoff">Panopto:</span> views, unique views, video duration and average watch time<span class="highlight2">*</span></li>
+<li><span class="vonrestoff">Thinglink:</span> views, unique views, tag views and clicks<span class="highlight">*</span></li>
+</ul>
+<p><span class="highlight2">*</span> Analytics export as csv.<br> <span class="highlight">*</span> Analytics export is for user profile as csv. Therefore requires post processing for a specific ThingLink creation</p>
+</section>
+<section id="analytics-user-behaviour-1" class="slide level2 center">
+<h2>Analytics &amp; user behaviour</h2>
+<p>One can assess the number of views over time, where people are viewing from and how long they engage.<br><br> However, without a baseline one can’t infer much about the relative quality of learning objects from their behaviour.</p>
+</section>
+<section id="user-feedback-as-a-diagnostic" class="slide level2 center">
+<h2>User feedback as a <span class="vonrestoff">diagnostic</span></h2>
+<p>I have struggled to find evidence of the usefulness of user feedback.</p>
+<p>Everyone asserts it is useful, but provide no tangible evidence as to why or how.</p>
+</section>
+<section id="why-am-i-sceptical-about-the-value-of-user-feedback" class="slide level2 center">
+<h2>Why am I sceptical about the value of user feedback?</h2>
+<p>Because of the <span class="vonrestoff">Hawthorne effect</span> and <span class="vonrestoff">selection bias</span></p>
+<p>What people do is more important than what they say</p>
+</section>
+<section id="dont-do-unnecessary-work" class="slide level2 center">
+<h2>Don’t do unnecessary work</h2>
+<p>Use your valuable time for things that matter.</p>
+<p><span class="vonrestoff">I’m not saying don’t gather feedback,</span> but I am saying that I can’t tell you what is worth doing and that you should have a hard think about any proposed feedback work.</p>
+<p>And before you go all-in, <span class="vonrestoff">test the validity of your idea(s) using the smallest possible design.</span></p>
+</section>
+<section id="summary" class="slide level2 center">
+<h2>Summary</h2>
+<ul>
+<li>Keep track of learning objects using a plain text file(s) i.e.&nbsp;csv files</li>
+<li>Information about user behaviour is available as csv files via export from either Google Analytics or in-built analytics</li>
+<li>I have no recommendations for feedback other than to be sceptical about it’s value due to lack of evidence</li>
+</ul>
 
 </section>
     <div class="quarto-auto-generated-content">
@@ -581,6 +729,44 @@ Alistair Bailey
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

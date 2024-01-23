@@ -1,6 +1,6 @@
 ---
 title: "Learning Objects"
-subtitle: "Data and Analytics"
+subtitle: "Data, analytics & feedback"
 author: "Alistair Bailey"
 date: last-modified
 date-format: "[Last updated on] YYYY-MM-DD" 
@@ -16,24 +16,109 @@ title-slide-attributes:
 
 ## What is the difference between a [database]{.vonrestoff} and a [repository]{.vonrestoff}? {.center}
 
-## {#slide2-id data-menu-title="Repositories and Databases" .center}
+##  {#slide2-id .center data-menu-title="Repositories and Databases"}
 
-1. Repository[*]{.highlight} a location where data is stored and managed
-2. Database[*]{.highlight} a collection of structured[*]{.highlight2} information
-3. Therefore a database can also be a repository, but a repository isn't necessarily a database.
+1.  Repository[\*]{.highlight} a location where data is stored and managed
+2.  Database[\*]{.highlight} a collection of structured[\*]{.highlight2} information
+3.  Therefore a database can also be a repository, but a repository isn't necessarily a database.
 
-[[*]{.highlight}These are not a universally agreed definitions.]{.small}<br>
-[[*]{.highlight2}Structured means that data is organised in a way that machines can read it. Such as using common identifiers across items. Unstructured means there is no formalised way to relate objects to one another even if they are related.]{.small}
+[\*]{.highlight}These are not a universally agreed definitions.<br> [\*]{.highlight2}Structured means that data is organised in a way that machines can read it. Such as using common identifiers across items. Unstructured means there is no formalised way to relate objects to one another even if they are related.
 
 ## What is the simplest way to create a database? {.center}
 
-## Use a [plain text file]{.vonrestoff} such as a comma separated variable file (.csv){.center}
+## Use a [plain text file]{.vonrestoff} such as a comma separated variable file (.csv) {.center}
 
-## {#slide4-id data-menu-title="Swole CSV vs Cheems Excel" background-image="img/Screenshot-2024-01-22.png" background-size="contain" fig-alt="A meme with Swole Dog as CSV and Cheems Dog as Excel"}
+##  {#slide4-id data-menu-title="Swole CSV vs Cheems Excel" background-image="img/Screenshot-2024-01-22.png" background-size="contain" fig-alt="A meme with Swole Dog as CSV and Cheems Dog as Excel"}
 
-## {#slide5-id data-menu-title="Swole CSV as a database" background-image="img/csv-2024-01-23.png" background-size="contain" fig-alt="A meme with Swole Dog as CSV saying he can be an Access database"}
+##  {#slide5-id data-menu-title="Swole CSV as a database" background-image="img/csv-2024-01-23.png" background-size="contain" fig-alt="A meme with Swole Dog as CSV saying he can be an Access database"}
 
-## {#slide6-id data-menu-title="BBC News COVID testing Excel fail" background-image="img/bbc-screenshot-2024-01-22.png" background-size="contain" fig-alt="Headline from BBC News: "}
+##  {#slide6-id data-menu-title="BBC News COVID testing Excel fail" background-image="img/bbc-screenshot-2024-01-22.png" background-size="contain" fig-alt="Headline from BBC News: "}
 
+## Tidy data {.center}
 
+-   Each column is a variable e.g. `object_name`, `date_created`
+-   Each row represents a set of observed variables
+-   Each value has it's own cell
+
+##  {#slide8-id .center data-menu-title="An example of a tidy table"}
+
+```{r}
+#| echo: false
+#| message: false
+library(readr)
+library(dplyr)
+library(kableExtra)
+dt <- read_csv("example-lo-database-2024-01-23.csv") 
+dt |> kable() |> 
+  kable_styling("striped", font_size = 32)
+```
+
+Here there are `four column variables` in `three rows`. Each `cell` has a `single value`.
+
+## Create a [codebook]{.vonrestoff} {.center}
+
+The codebook describes what each variable is and what values they can take[\*]{.highlight}
+
+[\*]{.highlight}This can also be a csv or other plain text file.
+
+##  {#slide10-id .center data-menu-title="Tidy table revisited"}
+
+```{r}
+#| echo: false
+#| message: false
+dt |> kable() |> 
+  kable_styling("striped", font_size = 32)
+```
+
+For example, here I could define that dates are entered in ISO format and restrict `analytics_available` to having only one of three values.
+
+## Analytics & user behaviour {.center}
+
+-   LibGuides, Wordpress & Articulate are connected to [Google Analytics]{.vonrestoff}\
+-   Panopto and ThingLink create their own statistics
+
+## Google Analytics[\*]{.highlight} {.center}
+
+-   [Per page:]{.vonrestoff} number of views, users, unique users and average engagement time over period defined
+-   [Summary of user demographics:]{.vonrestoff} country, city and language. Number of users and average engagement time
+-   [Technology:]{.vonrestoff} browser name, desktop, mobile or tablet
+
+[\*]{.highlight} Analytics exports as csv
+
+## In-built analytics {.center}
+
+-   [Panopto:]{.vonrestoff} views, unique views, video duration and average watch time[\*]{.highlight2}
+-   [Thinglink:]{.vonrestoff} views, unique views, tag views and clicks[\*]{.highlight}
+
+[\*]{.highlight2} Analytics export as csv.<br> [\*]{.highlight} Analytics export is for user profile as csv. Therefore requires post processing for a specific ThingLink creation
+
+## Analytics & user behaviour {.center}
+
+One can assess the number of views over time, where people are viewing from and how long they engage.<br><br> However, without a baseline one can't infer much about the relative quality of learning objects from their behaviour.
+
+## User feedback as a [diagnostic]{.vonrestoff} {.center}
+
+I have struggled to find evidence of the usefulness of user feedback.
+
+Everyone asserts it is useful, but provide no tangible evidence as to why or how.
+
+## Why am I sceptical about the value of user feedback? {.center}
+
+Because of the [Hawthorne effect]{.vonrestoff} and [selection bias]{.vonrestoff}
+
+What people do is more important than what they say
+
+## Don't do unnecessary work {.center}
+
+Use your valuable time for things that matter.
+
+[I'm not saying don't gather feedback,]{.vonrestoff} but I am saying that I can't tell you what is worth doing and that you should have a hard think about any proposed feedback work.
+
+And before you go all-in, [test the validity of your idea(s) using the smallest possible design.]{.vonrestoff}
+
+## Summary {.center}
+
+- Keep track of learning objects using a plain text file(s) i.e. csv files
+- Information about user behaviour is available as csv files via export from either Google Analytics or in-built analytics 
+- I have no recommendations for feedback other than to be sceptical about it's value due to lack of evidence
 

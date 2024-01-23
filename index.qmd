@@ -18,9 +18,9 @@ title-slide-attributes:
 
 ##  {#slide2-id .center data-menu-title="Repositories and Databases"}
 
-1.  Repository[\*]{.highlight} a location where data is stored and managed
-2.  Database[\*]{.highlight} a collection of structured[\*]{.highlight2} information
-3.  Therefore a database can also be a repository, but a repository isn't necessarily a database.
+1.  [\*]{.highlight}Repository: a location where data is stored and managed
+2.  [\*]{.highlight}Database: a collection of [\*]{.highlight2}structured information
+3.  A database can also be a repository, but a repository isn't necessarily a database.
 
 [[\*]{.highlight}These are not a universally agreed definitions.]{.small}
 

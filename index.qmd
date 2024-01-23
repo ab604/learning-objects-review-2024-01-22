@@ -22,7 +22,9 @@ title-slide-attributes:
 2.  Database[\*]{.highlight} a collection of structured[\*]{.highlight2} information
 3.  Therefore a database can also be a repository, but a repository isn't necessarily a database.
 
-[\*]{.highlight}These are not a universally agreed definitions.<br> [\*]{.highlight2}Structured means that data is organised in a way that machines can read it. Such as using common identifiers across items. Unstructured means there is no formalised way to relate objects to one another even if they are related.
+[[\*]{.highlight}These are not a universally agreed definitions.]{.small}
+
+[[*]{.highlight2}Structured means that data is organised in a way that machines can read it. Such as using common identifiers across items. Unstructured means there is no formalised way to relate objects to one another even if they are related.]{.small}
 
 ## What is the simplest way to create a database? {.center}
 
@@ -57,9 +59,9 @@ Here there are `four column variables` in `three rows`. Each `cell` has a `singl
 
 ## Create a [codebook]{.vonrestoff} {.center}
 
-The codebook describes what each variable is and what values they can take[\*]{.highlight}
+The codebook describes what each variable is and what values they can take[*]{.highlight}
 
-[\*]{.highlight}This can also be a csv or other plain text file.
+[[*]{.highlight}This can also be a csv or other plain text file.]{.small}
 
 ##  {#slide10-id .center data-menu-title="Tidy table revisited"}
 
@@ -83,14 +85,14 @@ For example, here I could define that dates are entered in ISO format and restri
 -   [Summary of user demographics:]{.vonrestoff} country, city and language. Number of users and average engagement time
 -   [Technology:]{.vonrestoff} browser name, desktop, mobile or tablet
 
-[\*]{.highlight} Analytics exports as csv
+[[\*]{.highlight} Analytics exports as csv]{.small}
 
 ## In-built analytics {.center}
 
 -   [Panopto:]{.vonrestoff} views, unique views, video duration and average watch time[\*]{.highlight2}
 -   [Thinglink:]{.vonrestoff} views, unique views, tag views and clicks[\*]{.highlight}
 
-[\*]{.highlight2} Analytics export as csv.<br> [\*]{.highlight} Analytics export is for user profile as csv. Therefore requires post processing for a specific ThingLink creation
+[[\*]{.highlight2} Analytics export as csv.]{.small}<br> [[\*]{.highlight} Analytics export is for user profile as csv. Therefore requires post processing for a specific ThingLink creation.]{.small}
 
 ## Analytics & user behaviour {.center}
 
@@ -118,7 +120,7 @@ And before you go all-in, [test the validity of your idea(s) using the smallest 
 
 ## Summary {.center}
 
-- Keep track of learning objects using a plain text file(s) i.e. csv files
-- Information about user behaviour is available as csv files via export from either Google Analytics or in-built analytics 
+- Keep track of learning objects using a plain text file(s)
+- Information about user behaviour is available (as csv files) via export from either Google Analytics or in-built analytics 
 - I have no recommendations for feedback other than to be sceptical about it's value due to lack of evidence
 

@@ -52,7 +52,7 @@ library(dplyr)
 library(kableExtra)
 dt <- read_csv("example-lo-database-2024-01-23.csv") 
 dt |> kable() |> 
-  kable_styling("striped", font_size = 32)
+  kable_styling(html_font="Consolas", font_size = 30)
 ```
 
 Here there are `four column variables` in `three rows`. Each `cell` has a `single value`.
@@ -69,7 +69,7 @@ The codebook describes what each variable is and what values they can take[*]{.h
 #| echo: false
 #| message: false
 dt |> kable() |> 
-  kable_styling("striped", font_size = 32)
+  kable_styling(html_font="Consolas", font_size = 30)
 ```
 
 For example, here I could define that dates are entered in ISO format and restrict `analytics_available` to having only one of three values.

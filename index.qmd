@@ -1,5 +1,6 @@
 ---
-title: "Learning Objects Review"
+title: "Learning Objects"
+subtitle: "Data and Analytics"
 author: "Alistair Bailey"
 date: last-modified
 date-format: "[Last updated on] YYYY-MM-DD" 
@@ -13,7 +14,26 @@ title-slide-attributes:
     data-background-color: "#8D3970"
 ---
 
-## Welcome to pedants corner. {.center}
+## What is the difference between a [database]{.vonrestoff} and a [repository]{.vonrestoff}? {.center}
 
-## [Databases]{.vonrestoff} and [repositories.]{.vonrestoff} What's the difference? {.center}
+## {#slide2-id data-menu-title="Repositories and Databases" .center}
+
+1. Repository[*]{.highlight} a location where data is stored and managed
+2. Database[*]{.highlight} a collection of structured[*]{.highlight2} information
+3. Therefore a database can also be a repository, but a repository isn't necessarily a database.
+
+[[*]{.highlight}These are not a universally agreed definitions.]{.small}<br>
+[[*]{.highlight2}Structured means that data is organised in a way that machines can read it. Such as using common identifiers across items. Unstructured means there is no formalised way to relate objects to one another even if they are related.]{.small}
+
+## What is the simplest way to create a database? {.center}
+
+## Use a [plain text file]{.vonrestoff} such as a comma separated variable file (.csv){.center}
+
+## {#slide4-id data-menu-title="Swole CSV vs Cheems Excel" background-image="img/Screenshot-2024-01-22.png" background-size="contain" fig-alt="A meme with Swole Dog as CSV and Cheems Dog as Excel"}
+
+## {#slide5-id data-menu-title="Swole CSV as a database" background-image="img/csv-2024-01-23.png" background-size="contain" fig-alt="A meme with Swole Dog as CSV saying he can be an Access database"}
+
+## {#slide6-id data-menu-title="BBC News COVID testing Excel fail" background-image="img/bbc-screenshot-2024-01-22.png" background-size="contain" fig-alt="Headline from BBC News: "}
+
+
 

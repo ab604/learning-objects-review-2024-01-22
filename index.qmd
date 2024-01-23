@@ -100,11 +100,11 @@ One can assess the number of views over time, where people are viewing from and 
 
 ## User feedback as a [diagnostic]{.vonrestoff} {.center}
 
-I have struggled to find evidence of the usefulness of user feedback.
+I have struggled to find evidence of the usefulness of on-line user feedback.
 
 Everyone asserts it is useful, but provide no tangible evidence as to why or how.
 
-## Why am I sceptical about the value of user feedback? {.center}
+## Why am I sceptical about the value of on-line user feedback? {.center}
 
 Because of the [Hawthorne effect]{.vonrestoff} and [selection bias]{.vonrestoff}
 
@@ -122,5 +122,5 @@ And before you go all-in, [test the validity of your idea(s) using the smallest 
 
 - Keep track of learning objects using a plain text file(s)
 - Information about user behaviour is available (as csv files) via export from either Google Analytics or in-built analytics 
-- I have no recommendations for feedback other than to be sceptical about it's value due to lack of evidence
+- I have no recommendations for on-line feedback other than to be sceptical about it's value due to lack of evidence
 

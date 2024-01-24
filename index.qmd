@@ -18,8 +18,8 @@ title-slide-attributes:
 
 ##  {#slide2-id .center data-menu-title="Repositories and Databases"}
 
-1.  [\*]{.highlight}Repository: a location where data is stored and managed
-2.  [\*]{.highlight}Database: a collection of [\*]{.highlight2}structured information
+1.  [\*]{.highlight}Repository: a location where data is stored and managed.
+2.  [\*]{.highlight}Database: a collection of [\*]{.highlight2}structured information.
 3.  A database can also be a repository, but a repository isn't necessarily a database.
 
 [[\*]{.highlight}These are not a universally agreed definitions.]{.small}
@@ -81,9 +81,9 @@ For example, here I could define that dates are entered in ISO format and restri
 
 ## Google Analytics[\*]{.highlight} {.center}
 
--   [Per page:]{.vonrestoff} number of views, users, unique users and average engagement time over period defined
--   [Summary of user demographics:]{.vonrestoff} country, city and language. Number of users and average engagement time
--   [Technology:]{.vonrestoff} browser name, desktop, mobile or tablet
+-   [Per page:]{.vonrestoff} number of views, users, unique users and average engagement time over period defined. Plus geography and technology.
+-   [Geography:]{.vonrestoff} country, city and language.
+-   [Technology:]{.vonrestoff} browser name, desktop, mobile or tablet.
 
 [[\*]{.highlight} Analytics exports as csv]{.small}
 
@@ -96,7 +96,7 @@ For example, here I could define that dates are entered in ISO format and restri
 
 ## Analytics & user behaviour {.center}
 
-One can assess the number of views over time, where people are viewing from and how long they engage.<br><br> However, without a baseline one can't infer much about the relative quality of learning objects from their behaviour.
+One can assess the number of views over time, how and where people are viewing from and duration of engagement.<br><br> However, without a baseline user behaviour provides limited inference about the relative quality of learning objects.
 
 ## User feedback as a [diagnostic]{.vonrestoff} {.center}
 
@@ -106,9 +106,9 @@ Everyone asserts it is useful, but provide no tangible evidence as to why or how
 
 ## Why am I sceptical about the value of on-line user feedback? {.center}
 
-Because of the [Hawthorne effect]{.vonrestoff} and [selection bias]{.vonrestoff}
+Because of [response](https://en.wikipedia.org/wiki/Response_bias) and [selection](https://en.wikipedia.org/wiki/Selection_bias) biases.
 
-What people do is more important than what they say
+What people do is more important than what they say.
 
 ## Don't do unnecessary work {.center}
 

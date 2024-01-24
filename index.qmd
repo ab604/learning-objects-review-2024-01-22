@@ -96,7 +96,7 @@ For example, here I could define that dates are entered in ISO format and restri
 
 ## Analytics & user behaviour {.center}
 
-One can assess the number of views over time, how and where people are viewing from and duration of engagement.<br><br> However, without a baseline user behaviour provides limited inference about the relative quality of learning objects.
+One can assess the number of views over time, how and where people are viewing from and duration of engagement.<br><br> However, without a baseline, user behaviour provides limited inference about the relative quality of learning objects.
 
 ## User feedback as a [diagnostic]{.vonrestoff} {.center}
 

@@ -7,6 +7,8 @@ date-format: "[Last updated on] YYYY-MM-DD"
 format: 
   revealjs:
     theme: [assets/styles.scss]
+    link-external-icon: true
+    link-external-newwindow: true
 title-slide-attributes:
     data-background-image: img/USH0149_LOGO-2021_RGB_White_Punched-AW.png
     data-background-size: 25%

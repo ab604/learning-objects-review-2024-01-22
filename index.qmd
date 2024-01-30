@@ -34,7 +34,14 @@ title-slide-attributes:
 
 ##  {#slide5-id data-menu-title="Swole CSV as a database" background-image="img/csv-2024-01-23.png" background-size="contain" fig-alt="A meme with Swole Dog as CSV saying he can be an Access database"}
 
-##  {#slide6-id data-menu-title="BBC News COVID testing Excel fail" background-image="img/bbc-screenshot-2024-01-22.png" background-size="contain" fig-alt="Headline from BBC News: "}
+## {#slide6-id data-menu-title="Excel fails and how to avoid them" .center}
+
+- BBC News: [Excel: Why using Microsoft's tool caused Covid-19 results to be lost](https://www.bbc.co.uk/news/technology-54423988)
+- New Scientist: [Frustration with Excel has caused geneticists to rename some genes](https://www.newscientist.com/article/mg24732961-400-frustration-with-excel-has-caused-geneticists-to-rename-some-genes/)
+
+### Practical guidance: 
+
+- [Data Organization in Spreadsheets by Karl W. Broman & Kara H. Woo](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 
 ## Tidy data {.center}
 
@@ -72,7 +79,7 @@ dt |> kable() |>
   kable_styling(html_font="Consolas", font_size = 30)
 ```
 
-For example, here I could define that dates are entered in ISO format and restrict `analytics_available` to having only one of three values.
+e.g. I could define that dates are entered in ISO format and restrict `analytics_available` to having only one of three values.
 
 ## Analytics & user behaviour {.center}
 

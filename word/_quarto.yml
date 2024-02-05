@@ -1,0 +1,22 @@
+# Output a word file using my Arial template with PLoS style referencing
+format: 
+  docx: 
+    reference-doc: arial_template.docx
+    csl: plos.csl
+    link-citations: true
+    author: 'Alistair Bailey'
+    date: last-modified
+    date-format: "[Last updated on] YYYY-MM-DD" 
+    title: "Learning objects analytics"
+
+# Turn off table of contents and section numbering
+toc: false
+number-sections: false
+
+# References bib file
+#bibliography: references.bib  
+
+# Don't show the code in the output
+execute: 
+  echo: false
+

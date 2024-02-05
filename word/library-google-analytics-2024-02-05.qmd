@@ -1,0 +1,23 @@
+One can assess the number of views of a learning object over time, how and where people are viewing from and duration of engagement. However, any inference about the relative quality of learning objects is limited from this data in isolation.
+
+## Google Analytics
+
+LibGuides, Wordpress & Articulate are connected to Google Analytics. Access is via [https://analytics.google.com](https://analytics.google.com)  using [unisotonlibrary@gmail.com]()
+
+Google Analytics provides lots of data via dashboards that can be viewed at different levels e.g. the whole site or individual pages. Key data of interest for user behaviour:
+
+ - Per page: number of views, users, unique users and average engagement time over period defined. Plus geography and technology.
+-   Geography: country, city and language.
+-   Technology: browser name, desktop, mobile or tablet.
+
+Analytics reports are exported as csv files that can be used in Excel.
+
+## Panopto and ThingLink
+
+These software create their own statistics and are accessed via the creators account:
+
+-   Panopto: views, unique views, video duration and average watch time
+-   Thinglink: views, unique views, tag views and clicks
+
+Panopto analytics are exported as csv.
+ThingLink analytics export is for user profile as csv. Therefore requires post processing for a analysis of specific ThingLink creation.
